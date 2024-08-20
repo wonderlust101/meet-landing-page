@@ -1,0 +1,44 @@
+@use '../abstract' as a;
+
+.hero {
+  padding: 4rem 0;
+
+  &__image {
+    width: min(100%, 63.75rem);
+    margin-top: 4rem;
+
+    @include a.breakpoint(large) {
+      display: none;
+    }
+
+    &--left, &--right {
+      display: none;
+
+      @include a.breakpoint(large) {
+        display: block;
+        width: min(80%, 35rem);
+      }
+    }
+
+    &--left {
+      margin-right: auto;
+    }
+
+    &--right {
+      margin-left: auto;
+    }
+  }
+
+  &__text-content {
+    max-width: 30rem;
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    gap: 1.5rem;
+
+    @include a.breakpoint(medium) {
+      padding: 4.5rem 2rem 4rem;
+    }
+  }
+}

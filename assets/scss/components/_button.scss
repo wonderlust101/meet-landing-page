@@ -1,0 +1,43 @@
+@use '../abstract' as a;
+
+.button {
+  display: block;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--clr-white);
+
+  &--purple {
+    background-color: var(--clr-purple-600);
+
+    &:hover {
+      background-color: #b18bdd;
+    }
+  }
+
+  &--cyan {
+    background-color: var(--clr-cyan-600);
+
+    &:hover {
+      background-color: #71c0d4;
+    }
+  }
+
+  &__version-number {
+    &--purple {
+      color: var(--clr-purple-300);
+    }
+
+    &--cyan {
+      color: var(--clr-cyan-300);
+    }
+  }
+
+  @include a.breakpoint(large) {
+    font-size: 1.125rem;
+  }
+}

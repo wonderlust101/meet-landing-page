@@ -3,3 +3,13 @@
 :root {
   @include a.map-to-root(clr, a.$colors);
 }
+
+body {
+  background-color: var(--clr-white);
+}
+
+header {
+  display: grid;
+  justify-content: center;
+  margin-top: 3rem;
+}

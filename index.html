@@ -4,31 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--     <meta name="title" content="title"> -->
-    <!--     <meta name="keywords" content="keyword"> -->
-    <!--     <meta name="description" content="description"> -->
+    <meta name="title" content="Meet Landing Page">
+    <meta name="keywords" content="group chat, online meeting, video calling, virtual collaborate, pc, mobile, tablet, team meeting">
+    <meta name="description" content="Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.">
 
-    <title>Document</title>
-    <!--         <link rel="icon" href="assets/images/favicon.png" /> -->
+    <title>Frontend Mentor | Meet landing page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
-    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <div style="display: grid; height: 100vh;">
-        <div style="width: 100%; background-color:var(--clr-primary-color-star-dust); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-election-night)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-crackled); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-fading-horizon)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-neon-spring); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-iris-royale)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-iris-royale); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-neon-spring)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-fading-horizon); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-crackled)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-election-night);display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-star-dust)">Neon Genesis Evangelion</h1></div>
-    </div>
+    <header>
+        <img class="logo" src="assets/images/logo.svg" alt="Logo of Meet">
+    </header>
 
-    <script src="assets/scripts/index.js"></script>
+    <main>
+        <section class="hero hero-layout">
+            <img class="hero__image--left" src="assets/images/desktop/image-hero-left.png" alt="Faces of people within a group of circles"
+                 aria-hidden="true">
+            <img class="hero__image" src="assets/images/tablet/image-hero.png" alt="Faces of people within a group of circles" aria-hidden="true">
+
+            <section class="hero__text-content">
+                <h1>Group Chat for Everyone</h1>
+                <p> Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+
+                <div class="button-layout">
+                    <a href="#" class="button button--cyan">Download <span class="button__version-number--cyan">v1.3</span></a>
+                    <a href="#" class="button button--purple">What is it?</a>
+                </div>
+            </section>
+
+            <img class="hero__image--right" src="assets/images/desktop/image-hero-right.png" alt="Faces of people within a group of circles"
+                 aria-hidden="true">
+        </section>
+
+        <div class="divider">
+            <hr class="divider__line" aria-hidden="true"/>
+            <p class="sr-only">The following section highlights key features of our service.</p>
+            <span class="divider__number">01</span>
+        </div>
+
+        <section class="feature-section">
+            <div class="image-grid">
+                <img class="feature-section__image" src="assets/images/desktop/image-woman-in-videocall.jpg"
+                     alt="Woman taking a video call in the kitchen" aria-hidden="true">
+                <img class="feature-section__image" src="assets/images/desktop/image-women-videochatting.jpg"
+                     alt="A group of women is video calling" aria-hidden="true">
+                <img class="feature-section__image" src="assets/images/desktop/image-men-in-meeting.jpg"
+                     alt="A man interviewing a anther man on a laptop" aria-hidden="true">
+                <img class="feature-section__image" src="assets/images/desktop/image-man-texting.jpg"
+                     alt="Man texting on a couch" aria-hidden="true">
+            </div>
+
+            <section class="feature-section__text-area">
+                <div class="feature-section__text-area--header">
+                    <h3>Built for modern use</h3>
+                    <h2>Smarter meetings, all in one place</h2>
+                </div>
+                <p>Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with
+                    invite-only team access, data encryption, and data export.</p>
+            </section>
+        </section>
+
+        <div class="divider">
+            <hr class="divider__line" aria-hidden="true"/>
+            <p class="sr-only">The following section is the header which provides another download link for you.</p>
+            <span class="divider__number">02</span>
+        </div>
+    </main>
+
+    <footer class="footer footer__image">
+        <h2 class="footer__header">Experience more together</h2>
+        <p class="footer__text">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+        <a href="#" class="button button--purple">Download <span class="button__version-number--purple">v1.3</span></a>
+    </footer>
 </body>
 </html>

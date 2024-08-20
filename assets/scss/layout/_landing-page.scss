@@ -1,0 +1,37 @@
+@use '../abstract' as a;
+
+.hero-layout {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template: 1fr 1fr /  1fr;
+
+  @include a.breakpoint(large) {
+    grid-template: 1fr / 1fr 1fr 1fr;
+  }
+}
+
+.image-grid {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-gap: 1rem;
+  max-width: 80rem;
+
+  @include a.breakpoint(medium) {
+    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+  }
+}
+
+.button-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  @include a.breakpoint(medium) {
+    flex-direction: row;
+  }
+}

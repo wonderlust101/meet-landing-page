@@ -1,36 +1,22 @@
 // Colors
 $colors: (
   // Main Colors
-        primary-color: (
-                'star-dust': #f9f3dd,
-                'crackled': #f2e7d1,
-                'neon-spring': #3ffd6a,
-                'iris-royale': #591b98,
-                'fading-horizon': #442266,
-                'election-night': #110320,
+        cyan: (
+                '300': #8fe3f9,
+                '600': #4d96a9,
         ),
   // Secondary Colors
-        secondary-color: (
-                'star-dust': #f9f3dd,
-                'crackled': #f2e7d1,
-                'neon-spring': #3ffd6a,
-                'iris-royale': #591b98,
-                'fading-horizon': #442266,
-                'election-night': #110320,
+        purple: (
+                '300': #d9b8ff,
+                '600': #855fb1,
         ),
   // Tertiary Color
-        tertiary-color: (
-                'star-dust': #f9f3dd,
-                'crackled': #f2e7d1,
-                'neon-spring': #3ffd6a,
-                'iris-royale': #591b98,
-                'fading-horizon': #442266,
-                'election-night': #110320,
+        slate: (
+                '300': #d1d1df,
+                '600': #87879d,
+                '900': #28283d,
         ),
-  // Text Color
-        'text': #4d4f62,
   // Other
         'background': #fafafa,
-        'white': #ffffff,
-        'black': #000000,
+        'white': #fafafa,
 );

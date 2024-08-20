@@ -52,5 +52,4 @@
     $grid-template: '#{$grid-template} \'#{$area}\'';
     $count: $count + 1;
   }
-  grid-template-areas: #{$grid-template};
 }

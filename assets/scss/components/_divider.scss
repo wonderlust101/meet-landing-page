@@ -1,0 +1,38 @@
+@use '../abstract' as a;
+
+.divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__line {
+    height: 5rem;
+    width: 1px;
+    border: none;
+    right: 1000px;
+    background-color: var(--clr-slate-300);
+  }
+
+  &__number {
+    display: flex;
+    width: 3.5rem;
+    height: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 150%;
+    border: 1px solid var(--clr-slate-300);
+    border-radius: 50rem;
+    color: var(--clr-slate-600);
+    background-color: var(--clr-white);
+    z-index: 2;
+
+    @include a.breakpoint(large) {
+      width: 4rem;
+      height: 4rem;
+      font-size: 1.125rem;
+    }
+  }
+}

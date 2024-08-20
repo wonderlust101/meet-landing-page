@@ -2,5 +2,51 @@
 
 h1, h2, h3, h4,
 h5, h6, p {
+  font-family: 'Red Hat Display', sans-serif;
+}
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--clr-slate-900);
+
+  @include a.breakpoint(large) {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--clr-slate-900);
+
+  @include a.breakpoint(large) {
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  font-size: 0.75rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  color: var(--clr-cyan-600);
+
+  @include a.breakpoint(large) {
+    font-size: 1rem;
+  }
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--clr-slate-600);
+
+  @include a.breakpoint(large) {
+    font-size: 1.125rem;
+  }
 }
